@@ -24,9 +24,9 @@
       }
     </style>
   </head>
-  <body class="font-sans antialiased text-gray-900">
+  <body class="font-sans antialiased text-gray-900 bg-black">
     <header
-      class="flex items-center justify-between gap-2 bg-[#1A0B2E] px-4 py-2 md:px-44 md:py-4 text-white"
+      class="flex items-center justify-between gap-2 bg-[#1A0B2E] px-8 py-6 mx-auto md:px-44 md:py-6 text-white border border-transparent border-b-purple-500"
     >
       <div class="text-2xl font-bold tracking-normal">
         <a href="#" class="hover:text-purple-500 transition-colors"
@@ -75,6 +75,69 @@
         />
       </div>
     </header>
-    <main class="p-6"></main>
+    <main class="mx-auto my-0">
+      <section id="banner">
+        <div
+          class="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#1A0B2E] px-4 py-20 text-center"
+        >
+          <div class="absolute inset-0 z-0">
+            <img
+              src="assets/hero-bg.png"
+              alt="hero-bg"
+              class="h-full w-full object-cover opacity-40"
+            />
+          </div>
+
+          <div class="relative z-10 flex items-center justify-center mb-10">
+            <img
+              src="assets/hero-circle.png"
+              alt="circle-img"
+              class="w-64 md:w-96"
+            />
+
+            <img
+              src="assets/microphone.png"
+              alt="microphone-img"
+              class="absolute w-24 md:w-36"
+            />
+
+            <span
+              class="absolute top-4 right-4 md:top-8 md:right-8 rounded-full bg-[#00FF88] px-3 py-1 text-xs font-bold text-black shadow-[0_0_15px_#00FF88]"
+            >
+              NEW
+            </span>
+          </div>
+          <div class="relative z-20">
+            <h1
+              class="text-4xl md:text-6xl font-black text-white mb-4 tracking-tighter"
+            >
+              TechWave
+            </h1>
+            <p class="text-gray-400 max-w-xl mx-auto mb-10 text-lg md:text-xl">
+              Your daily dose of tech insights, productivity hacks, and personal
+              growth
+            </p>
+
+            <div
+              class="flex flex-col sm:flex-row justify-center items-center gap-3"
+            >
+              <button
+                class="flex items-center gap-3 rounded-full bg-linear-to-tr from-[#FFEB3B] via-[#E91E63] to-[#9C27B0] px-9 py-5 font-bold text-white"
+              >
+                <i class="fa-brands fa-spotify text-xl"></i> Listen on Spotify
+              </button>
+              <button
+                class="flex items-center gap-3 rounded-full border border-teal-400 bg-teal-900/10 px-9 py-5 font-bold text-teal-400"
+              >
+                <i class="fa-regular fa-envelope text-xl"></i> Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <!-- Footer content -->
+    </footer>
   </body>
 </html>
